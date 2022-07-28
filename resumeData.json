@@ -1,0 +1,148 @@
+{
+  "main": {
+    "name": "Jose Chaves",
+    "description": "I'm a Software Engineer.",
+    "image": "profilepic.png",
+    "bio": "Small Description about myself.",
+    "contactmessage": "I would love to hear from you, send me a email.",
+    "email": "josemcm85@gmail.com",
+    "phone": "(506)-84069608",
+    "address": {
+      "street": "Heredia",
+      "city": "Heredia",
+      "state": "Ulloa",
+      "zip": "40104"
+    },
+    "resumedownload": "http://timbakerdev.com",
+    "social": [
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/josemcm85",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/jose-chaves-b3455252/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/josemcm85",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "Universidad Latina de Costa Rica",
+        "degree": "Software Engineering",
+        "graduated": "2022",
+        "description": "Found my true passion."
+      },
+      {
+        "school": "Universidad Latina de Costa Rica",
+        "degree": "Industrial Engineering",
+        "graduated": "Last year pending",
+        "description": "Learned how valuable is continuos improvement and planning."
+      },
+      {
+        "school": "CertiProf",
+        "degree": "Scrum Master Professional Certificate - SMPC®",
+        "graduated": "2021",
+        "description": "Credential Id TLLDDGKZKK-HHMYHWHS-RPDHKDSPT"
+      },
+      {
+        "school": "6 Sigma Study",
+        "degree": "Six Sigma Yellow Belt",
+        "graduated": "2016",
+        "description": "Credential Id 71212"
+      },
+      {
+        "school": "The Interaction Design Foundation",
+        "degree": "Design Thinking: The beginners guide",
+        "graduated": "2020",
+        "description": "Credential Id 85684"
+      }
+    ],
+    "work": [
+      {
+        "company": "Experian",
+        "title": "Software Engineer",
+        "years": "March 2021 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company": "Experian",
+        "title": "Data Modeling Analyst",
+        "years": "January 2017 - February 2021",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company": "World Fuel Services",
+        "title": "Supply Analyst",
+        "years": "January 2012 - December 2016",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Javascript",
+        "level": "80%"
+      },
+      {
+        "name": "C#",
+        "level": "90%"
+      },
+      {
+        "name": "Java",
+        "level": "85%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": ".NET Core",
+        "level": "90%"
+      },
+      {
+        "name": "Shell-script",
+        "level": "80%"
+      },
+      {
+        "name": "Python",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "01.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      },
+      {
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "02.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "03.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "04.jpg",
+        "url": "http://www.timbakerdev.com"
+      }
+    ]
+  }
+}
