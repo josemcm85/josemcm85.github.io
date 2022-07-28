@@ -103,7 +103,7 @@ class Contact extends Component {
             </div>
           </Slide>
 
-          <Slide right duration={1000}>
+          <Slide left duration={1000}>
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>

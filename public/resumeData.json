@@ -3,8 +3,8 @@
     "name": "Jose Chaves",
     "description": "I'm a Software Engineer.",
     "image": "profilepic.png",
-    "bio": "Small Description about myself.",
-    "contactmessage": "I would love to hear from you, send me a email.",
+    "bio": "Software Engineer professional with strong communication and relationship-building skills. I look for a career opportunity where I can thrive, aligning my personal purpose and professional growth by actively applying my formal business education, capabilities, and experience to guarantee a strong contribution to meet the organization’s goals.",
+    "contactmessage": "I would love to hear from you, send me an email.",
     "email": "josemcm85@gmail.com",
     "phone": "(506)-84069608",
     "address": {
@@ -13,7 +13,7 @@
       "state": "Ulloa",
       "zip": "40104"
     },
-    "resumedownload": "http://timbakerdev.com",
+    "resumedownload": "https://drive.google.com/file/d/1c08sJQmQ7RM6oTw5RGco1e5quwLq1JZ7/view?usp=sharing",
     "social": [
       {
         "name": "twitter",
@@ -33,7 +33,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": "Love to learn new things and add them to this list.",
     "education": [
       {
         "school": "Universidad Latina de Costa Rica",
@@ -71,19 +71,19 @@
         "company": "Experian",
         "title": "Software Engineer",
         "years": "March 2021 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Analyze, design, develop, code, and implement programs for the Oracle imaging system. Technologies used for automating processes: Java, Python, Shell-script, Oracle Database"
       },
       {
         "company": "Experian",
         "title": "Data Modeling Analyst",
         "years": "January 2017 - February 2021",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Provided support to an in-house application of the Third-Party Risk Department. Application built in VB.Net and WinForms. Database in Microsoft SQL Server"
       },
       {
         "company": "World Fuel Services",
         "title": "Supply Analyst",
         "years": "January 2012 - December 2016",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Automated processes for the pricing department and provided support to Jet Fuel suppliers across all Latin America"
       }
     ],
     "skills": [
@@ -120,28 +120,28 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "01.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "Simple Tasks",
+        "category": "To do list, C# | WPF | MVVM",
+        "image": "default.png",
+        "url": ""
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "02.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "CRC to USD Converter BCCR",
+        "category": "Javascript Web scrapping BCCR",
+        "image": "default.png",
+        "url": ""
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "03.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "AAAAA",
+        "category": "AAAAAA",
+        "image": "default.png",
+        "url": ""
       },
       {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "04.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "AAAAA",
+        "category": "AAAAA",
+        "image": "default.png",
+        "url": ""
       }
     ]
   }
