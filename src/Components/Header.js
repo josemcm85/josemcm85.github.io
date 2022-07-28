@@ -1,19 +1,106 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import Particles, { ISourceOptions } from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
 
+    const particlesInit = async (main) => {
+      console.log(main);
+      await loadFull(main);
+    };
+    const particlesLoaded = (container) => {
+      console.log(container);
+    };
+
+    const options: ISourceOptions = {
+      background: {
+        color: {
+          value: "#0E185F",
+        },
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: false,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+          resize: true,
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#E8FFC2",
+        },
+        links: {
+          color: "#E8FFC2",
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1,
+        },
+        collisions: {
+          enable: false,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce",
+          },
+          random: false,
+          speed: 3,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800,
+          },
+          value: 55,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 1, max: 5 },
+        },
+      },
+      detectRetina: true,
+    };
+
+    const styleName = { color: "#00FFDD" };
+
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={options}
+        />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -56,26 +143,15 @@ class Header extends Component {
           </ul>
         </nav>
 
-        <div className="row banner">
-          <div className="banner-text">
-            <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
-            </Fade>
-            <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
-            </Fade>
-            <hr />
-            <Fade bottom duration={2000}>
-              <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
-                <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
-                </a>
-              </ul>
-            </Fade>
-          </div>
+        <div className="banner-text">
+          <Fade bottom>
+            <h1 className="responsive-headline">
+              Hello, I'm <span style={styleName}>{name}</span>.
+            </h1>
+          </Fade>
+          <Fade bottom duration={1200}>
+            <h3>{description}</h3>
+          </Fade>
         </div>
 
         <p className="scrolldown">
