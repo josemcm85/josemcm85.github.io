@@ -367,6 +367,14 @@
 
   #contact input.submit {
     margin: 30px 0 24px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2b2b2b;
+    background: #00ffdd;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
   }
 
   #message-warning,
