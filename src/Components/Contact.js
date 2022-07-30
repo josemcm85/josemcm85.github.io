@@ -20,11 +20,6 @@ class Contact extends Component {
     const titleMessage = this.props.data.contactmessage;
     const form = this.myRef;
 
-    let from_name = "";
-    let reply_to = "";
-    let subject = "";
-    let message = "";
-
     const sendEmail = (e) => {
       e.preventDefault();
 
