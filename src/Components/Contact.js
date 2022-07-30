@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
+import emailjs from "@emailjs/browser";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+
   render() {
     if (!this.props.data) return null;
 
@@ -11,7 +17,34 @@ class Contact extends Component {
     const state = this.props.data.address.state;
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
+    const titleMessage = this.props.data.contactmessage;
+    const form = this.myRef;
+
+    let from_name = "";
+    let reply_to = "";
+    let subject = "";
+    let message = "";
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_si6v4de",
+          "template_wsf6swj",
+          form.current,
+          "UTgkpiCwGcF5wZ8qa"
+        )
+        .then(
+          (result) => {
+            alert("Email sent successfully.");
+            e.target.reset();
+          },
+          (error) => {
+            alert(JSON.stringify(error));
+          }
+        );
+    };
 
     return (
       <section id="contact">
@@ -24,7 +57,7 @@ class Contact extends Component {
             </div>
 
             <div className="ten columns">
-              <p className="lead">{message}</p>
+              <p className="lead">{titleMessage}</p>
             </div>
           </div>
         </Fade>
@@ -32,67 +65,72 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
-                <fieldset>
-                  <div>
-                    <label htmlFor="contactName">
-                      Name <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactName"
-                      name="contactName"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                id="contactForm"
+                name="contactForm"
+                encType="text/plain"
+              >
+                <div>
+                  <label htmlFor="contactName">
+                    Name <span className="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    size="35"
+                    id="contactName"
+                    name="from_name"
+                    required={true}
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactEmail">
-                      Email <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactEmail"
-                      name="contactEmail"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="contactEmail">
+                    Email <span className="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    defaultValue=""
+                    size="35"
+                    id="contactEmail"
+                    name="reply_to"
+                    required={true}
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactSubject">Subject</label>
-                    <input
-                      type="text"
-                      defaultValue=""
-                      size="35"
-                      id="contactSubject"
-                      name="contactSubject"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="contactSubject">Subject</label>
+                  <input
+                    type="text"
+                    defaultValue=""
+                    size="35"
+                    id="contactSubject"
+                    name="subject"
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="contactMessage">
-                      Message <span className="required">*</span>
-                    </label>
-                    <textarea
-                      cols="50"
-                      rows="10"
-                      id="contactMessage"
-                      name="contactMessage"
-                    ></textarea>
-                  </div>
+                <div>
+                  <label htmlFor="contactMessage">
+                    Message <span className="required">*</span>
+                  </label>
+                  <textarea
+                    cols="50"
+                    rows="10"
+                    id="contactMessage"
+                    name="message"
+                    required={true}
+                  ></textarea>
+                </div>
 
-                  <div>
-                    <button className="submit">Submit</button>
-                    <span id="image-loader">
-                      <img alt="" src="images/loader.gif" />
-                    </span>
-                  </div>
-                </fieldset>
+                <div>
+                  <input type="submit" className="submit" value="Submit" />
+
+                  <span id="image-loader">
+                    <img alt="" src="images/loader.gif" />
+                  </span>
+                </div>
               </form>
 
               <div id="message-warning"> Error boy</div>

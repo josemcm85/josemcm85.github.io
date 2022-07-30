@@ -119,6 +119,7 @@
     height: 48px;
     text-align: left;
     background-color: #00ffdd;
+    color: #0e185f;
     position: relative;
     border: none;
     float: right;
@@ -363,6 +364,19 @@
   #contact button.submit {
     margin: 30px 0 24px 0;
   }
+
+  #contact input.submit {
+    margin: 30px 0 24px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2b2b2b;
+    background: #00ffdd;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+  }
+
   #message-warning,
   #message-success {
     width: 100%;

@@ -964,8 +964,8 @@ call-to-action .button {
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-  color: #fff;
-  background-color: #0762f9;
+  color: #2b2b2b;
+  background-color: #00ffdd;
 }
 #contact button.submit {
   text-transform: uppercase;
@@ -983,8 +983,26 @@ call-to-action .button {
   color: #2b2b2b;
   background: #fff;
 }
+
+#contact input.submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2b2b2b;
+  background: #00ffdd;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 0px;
+  margin-left: 26%;
+}
+#contact input.submit:hover {
+  color: #2b2b2b;
+  background: #fff;
+}
+
 #contact span.required {
-  color: #0762f9;
+  color: #00ffdd;
   font-size: 13px;
 }
 #message-warning,
