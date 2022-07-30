@@ -6,7 +6,7 @@
     "bio": "Software Engineer professional with strong communication and relationship-building skills. I look for a career opportunity where I can thrive, aligning my personal purpose and professional growth by actively applying my formal business education, capabilities, and experience to guarantee a strong contribution to meet the organization’s goals.",
     "contactmessage": "I would love to hear from you, send me an email.",
     "email": "josemcm85@gmail.com",
-    "phone": "(506)-84069608",
+    "phone": "(506) 8406-9608",
     "address": {
       "street": "Heredia",
       "city": "Heredia",
@@ -36,60 +36,68 @@
     "skillmessage": "Love to learn new things and add them to this list.",
     "education": [
       {
+        "id": 1,
         "school": "Universidad Latina de Costa Rica",
         "degree": "Software Engineering",
         "graduated": "2022",
-        "description": "Found my true passion."
+        "description": ""
       },
       {
+        "id": 2,
         "school": "Universidad Latina de Costa Rica",
         "degree": "Industrial Engineering",
         "graduated": "Last year pending",
-        "description": "Learned how valuable is continuos improvement and planning."
+        "description": ""
       },
       {
+        "id": 3,
         "school": "CertiProf",
         "degree": "Scrum Master Professional Certificate - SMPC®",
         "graduated": "2021",
-        "description": "Credential Id TLLDDGKZKK-HHMYHWHS-RPDHKDSPT"
+        "description": ""
       },
       {
+        "id": 4,
         "school": "6 Sigma Study",
         "degree": "Six Sigma Yellow Belt",
         "graduated": "2016",
-        "description": "Credential Id 71212"
+        "description": ""
       },
       {
+        "id": 5,
         "school": "The Interaction Design Foundation",
         "degree": "Design Thinking: The beginners guide",
         "graduated": "2020",
-        "description": "Credential Id 85684"
+        "description": ""
       }
     ],
     "work": [
       {
+        "id": 1,
         "company": "Experian",
         "title": "Software Engineer",
         "years": "March 2021 - Present",
-        "description": "Analyze, design, develop, code, and implement programs for the Oracle imaging system. Technologies used for automating processes: Java, Python, Shell-script, Oracle Database"
+        "description": "Analyze, design, develop, code, and implement programs for the Oracle imaging system. Technologies used for automating processes: Java, Python, Shell-script, Oracle Database."
       },
       {
+        "id": 2,
         "company": "Experian",
         "title": "Data Modeling Analyst",
         "years": "January 2017 - February 2021",
-        "description": "Provided support to an in-house application of the Third-Party Risk Department. Application built in VB.Net and WinForms. Database in Microsoft SQL Server"
+        "description": "Provided support to an in-house application of the Third-Party Risk Department. Application built in VB.Net, WinForms, Microsoft SQL Server."
       },
       {
+        "id": 3,
         "company": "World Fuel Services",
         "title": "Supply Analyst",
         "years": "January 2012 - December 2016",
-        "description": "Automated processes for the pricing department and provided support to Jet Fuel suppliers across all Latin America"
+        "description": "Automated processes for the pricing department and provided support to Jet Fuel suppliers across all Latin America."
       }
     ],
     "skills": [
       {
         "name": "Javascript",
-        "level": "80%"
+        "level": "75%"
       },
       {
         "name": "C#",
@@ -101,7 +109,7 @@
       },
       {
         "name": "ReactJs",
-        "level": "80%"
+        "level": "75%"
       },
       {
         "name": ".NET Core",
@@ -113,35 +121,29 @@
       },
       {
         "name": "Python",
-        "level": "80%"
+        "level": "50%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Simple Tasks",
-        "category": "To do list, C# | WPF | MVVM",
-        "image": "default.png",
-        "url": ""
+        "title": "Today Focus",
+        "category": "C# | WPF | MongoDB | MVVM",
+        "image": "Today_Focus.jpg",
+        "url": "https://github.com/josemcm85/TodayFocus"
       },
       {
-        "title": "CRC to USD Converter BCCR",
-        "category": "Javascript Web scrapping BCCR",
-        "image": "default.png",
-        "url": ""
+        "title": "CRC to USD exchange rate",
+        "category": "Javascript",
+        "image": "CRC_USD.jpg",
+        "url": "https://github.com/josemcm85/CRCtoUSD"
       },
       {
-        "title": "AAAAA",
-        "category": "AAAAAA",
-        "image": "default.png",
-        "url": ""
-      },
-      {
-        "title": "AAAAA",
-        "category": "AAAAA",
-        "image": "default.png",
-        "url": ""
+        "title": "Pdf page remover",
+        "category": "Python",
+        "image": "pdf.png",
+        "url": "https://github.com/josemcm85/Pdf_PageRemover"
       }
     ]
   }
