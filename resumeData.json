@@ -134,16 +134,22 @@
         "url": "https://github.com/josemcm85/TodayFocus"
       },
       {
+        "title": "QR Maker",
+        "category": "ReactJs",
+        "image": "qrmaker.jpg",
+        "url": "https://github.com/josemcm85/qrMaker"
+      },
+      {
+        "title": "Portfolio website",
+        "category": "ReactJs",
+        "image": "site.jpg",
+        "url": ""
+      },
+      {
         "title": "CRC to USD exchange rate",
         "category": "Javascript",
         "image": "CRC_USD.jpg",
         "url": "https://github.com/josemcm85/CRCtoUSD"
-      },
-      {
-        "title": "Portfolio website",
-        "category": "Javascript | React",
-        "image": "site.jpg",
-        "url": ""
       },
       {
         "title": "Pdf page remover",
