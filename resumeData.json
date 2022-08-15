@@ -65,9 +65,23 @@
       },
       {
         "id": 5,
+        "school": "Microsoft",
+        "degree": "Azure Fundamentals",
+        "graduated": "2022",
+        "description": ""
+      },
+      {
+        "id": 6,
         "school": "The Interaction Design Foundation",
         "degree": "Design Thinking: The beginners guide",
         "graduated": "2020",
+        "description": ""
+      },
+      {
+        "id": 7,
+        "school": "Pirple",
+        "degree": "Front End Fundamentals",
+        "graduated": "2022",
         "description": ""
       }
     ],
